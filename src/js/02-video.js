@@ -2,8 +2,6 @@ import { save, load } from "./partials/storagemethod";
 import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
-
-
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 const CURRENT_TIME_KEY = 'videoplayer-current-time';
@@ -14,7 +12,6 @@ const onPlay = function (data) {
 
 player.on('timeupdate', throttle(onPlay, 1000));
 let currentTime = load(CURRENT_TIME_KEY); // let currentTime = localStorage.getItem(CURRENT_TIME_KEY);
-
 
 function savedCurrentTimeOnVideo() {
   if (!currentTime) {
