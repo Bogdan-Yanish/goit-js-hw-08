@@ -1,3 +1,3 @@
-// export default function stopDefAction(event) {
-//     event.preventDefault();
-// }
+export default function stopDefAction(event) {
+    event.preventDefault();
+}
