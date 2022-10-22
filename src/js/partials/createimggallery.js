@@ -1,4 +1,4 @@
-export function createImgGallery(event) {
+export default function createImgGallery(event) {
     return event
     .map(({ preview, original, description }) => {
  return `
