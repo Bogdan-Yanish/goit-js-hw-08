@@ -1,4 +1,4 @@
-import { save, load } from "./partials/storagemethod";
+import { save, load } from "./partials/storage";
 import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
